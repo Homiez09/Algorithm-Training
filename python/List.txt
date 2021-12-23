@@ -1,0 +1,11 @@
+0000 - A + B Problem
+0001 - Grading
+0002 - Min Max
+0003 - Matrix Adding
+0004 - Character Checker
+0005 - Pythagorus
+0007 - Herman
+0008 - X2
+0009 - ABC
+0010 - Trik
+0011 - Modolo
