@@ -1,14 +1,23 @@
 # A < B < C
+# 1 < 3 < 5
 
-# mode => ABC ACB CBA CAB BCA BAC
-A, B, C = input().split()
-a, b, c = int(A), int(B), int(C)
-mode = input()
-abc = [a, b, c]
-abc.sort()
+number1, number2, number3 = input().split()
+alphabet = input()
 
-if mode == "ABC":
-    print(*abc, sep = ' ')
-elif mode == "CBA":
-    abc.reverse
-    print(*abc, sep = ' ')
+alphabet = [alphabet[0], alphabet[1], alphabet[2]]
+listNum = [int(number1), int(number2), int(number3)]
+listNum.sort()
+
+A, B, C = str(listNum[0]), str(listNum[1]), str(listNum[2])
+AA, BB, CC = alphabet.index('A'), alphabet.index('B'), alphabet.index('C')
+#print(loA, loB, loC)
+
+alphabet.pop(AA)
+alphabet.insert(AA, A)
+alphabet.pop(BB)
+alphabet.insert(BB, B)
+alphabet.pop(CC)
+alphabet.insert(CC, C)
+
+print(f'{alphabet[0]} {alphabet[1]} {alphabet[2]}')
+

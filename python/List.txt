@@ -9,3 +9,6 @@
 0009 - ABC
 0010 - Trik
 0011 - Modolo
+0012 - Okviri
+0013 - Severn Dawarves
+0014 - Great Common Divisor

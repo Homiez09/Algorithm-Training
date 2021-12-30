@@ -1,21 +1,31 @@
-X, Y = input().split()
-A = []
-B = []
-#A = [[1,2,3],[3,2,1],[1,3,2]]
-#B = [[1,1,1],[1,1,1],[1,1,1]]
-for i in range(int(X)):
-    A.append([int(z) for z in input().split()])
-for i in range(int(Y)):
-    B.append([int(z) for z in input().split()])
+n = input().split()
+m1 = []
+m2 = []
+mAns = []
 
-new = []
+for i in range(int(n[0])):
+    m1.append([])
+    m2.append([])
+    mAns.append([])
+    for j in range(int(n[1])):
+        m1[i].append(0)
+        m2[i].append(0)
+        mAns[i].append(0)
 
-for i in range(int(X)):
-    new.append([])
-    for j in range(int(X)):
-        #print(i, j)
-        new[i].append(A[i][j]+B[i][j])
-#print(new)
-total = len(new)
-for i in range(total):
-    print(*new[i], sep = " ")
+for i in range(int(n[0])):
+    x = input().split()
+    for j in range(int(n[1])):
+        m1[i][j] = x[j]
+
+for i in range(int(n[0])):
+    x = input().split()
+    for j in range(int(n[1])):
+        m2[i][j] = x[j]
+
+for i in range(int(n[0])):
+    for j in range(int(n[1])):
+        mAns[i][j] = int(m1[i][j]) + int(m2[i][j])
+        mAns[i][j] = str(mAns[i][j])
+
+for i in range(len(mAns)):
+    print(" ".join(mAns[i]))
